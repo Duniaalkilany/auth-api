@@ -13,7 +13,7 @@ const authroutes = require('./routes/routes');
 
 const v1Routes = require('./routes/v1');
 const v2Routes = require('./routes/v2.js');
-const { use } = require('../src/routes/routes');
+// const { use } = require('../src/routes/routes');
 
 //prepare express app
 const app = express();
