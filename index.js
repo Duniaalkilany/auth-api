@@ -8,6 +8,6 @@ const {db} = require('./src/auth/models/index'); //destructuring es6
 
 
 db.sync().then(()=> {
-    server.start(process.env.PORT|| 3000);
+    server.start(process.env.PORT);
 })
 .catch(console.error);
