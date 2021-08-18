@@ -2,7 +2,7 @@
 
 let superTest = require('supertest');
 const server = require('../src/server');
-const mockReq = superTest(server.app);
+const mockReq = superTest(server.server);
 
 
 let users = {

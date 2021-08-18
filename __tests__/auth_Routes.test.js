@@ -3,12 +3,12 @@ require('dotenv').config();
 
 let superTest = require('supertest');
 let server = require('../src/server');
-let mockReq = superTest(server.app);
+let mockReq = superTest(server.server);
 
 const users = {
-    admin: { username: 'admin-400', password: 'password', role: 'admin' },
-    editor: { username: 'editor-400', password: 'password', role: 'editor' },
-    user: { username: 'user-400', password: 'password', role: 'user' },
+    admin: { username: 'admin-500', password: 'password', role: 'admin' },
+    editor: { username: 'editor-500', password: 'password', role: 'editor' },
+    user: { username: 'user-500', password: 'password', role: 'user' },
 };
 
 describe('sign-up sign-in', () => {
