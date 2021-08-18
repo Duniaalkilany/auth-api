@@ -8,21 +8,14 @@ const foodModel = require('../models/food/model.js');
 const userModel = require('./users');
 const Collection = require('./data-collection.js');
 
-const DATABASE_URL = process.env.NODE_ENV === 'test' ? 'sqlite:memory:' : 'postgres://localhost:5432/dunia';
+const DATABASE_URL = process.env.NODE_ENV === 'test' ? 'sqlite:memory:' :'postgres://localhost:5432/dunia';
 // const DATABASE_URL = process.env.NODE_ENV='test'?'sqlite:memory:':
 
 
-let sequelizeOptions = {
-  dialectOptions: {
-      ssl: {
-        require: true,
-        rejectUnauthorized: false,
-      }
-    }
-};
 
 
-const sequelize = new Sequelize(DATABASE_URL, sequelizeOptions);
+
+const sequelize = new Sequelize(DATABASE_URL);
 
 
 const food = foodModel(sequelize, DataTypes);
