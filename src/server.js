@@ -42,22 +42,13 @@ app.use(errorHandler);
 
 // listening function
 
-function start(port){
-    app.listen(port, () => {
-        console.log(`listening on ${port}`);
-    })
-}
 
-// export module for index.js
 module.exports = {
-    app: app,
-  start: start
+    server: app,
+    start: (port) => {
+      if (!port) {
+        throw new Error('Missing Port');
+      }
+      app.listen(port, () => console.log(`Listening on ${port}`));
+    },
   };
-
-// module.exports = {
-//   app: app,
-//   start: port => {
-//     if (!port) { throw new Error("Missing Port"); }
-//     app.listen(port, () => console.log(`Listening on ${port}`));
-//   },
-// };

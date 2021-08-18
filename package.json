@@ -1,7 +1,7 @@
 {
   "name": "auth-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Author: Dunia Alkilany",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -36,6 +36,6 @@
     "sequelize-cli": "^6.2.0",
     "sqlite3": "^5.0.2",
     "supertest": "^6.1.5"
-  }
+  },
+  "devDependencies": {}
 }
-
