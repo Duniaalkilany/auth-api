@@ -6,9 +6,9 @@ let server = require('../src/server');
 let mockReq = superTest(server.app);
 
 const users = {
-    admin: { username: 'admin-100', password: 'password', role: 'admin' },
-    editor: { username: 'editor-100', password: 'password', role: 'editor' },
-    user: { username: 'user-100', password: 'password', role: 'user' },
+    admin: { username: 'admin-102', password: 'password', role: 'admin' },
+    editor: { username: 'editor-102', password: 'password', role: 'editor' },
+    user: { username: 'user-102', password: 'password', role: 'user' },
 };
 
 describe('sign-up sign-in', () => {
