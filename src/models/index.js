@@ -8,8 +8,8 @@ const foodModel = require('../models/food/model.js');
 const userModel = require('./users');
 const Collection = require('./data-collection.js');
 
-// const DATABASE_URL = process.env.NODE_ENV === 'test' ? 'sqlite:memory:' : process.env.DATABASE_URL||'postgres://localhost:5432/dunia';
-const DATABASE_URL = process.env.DATABASE_URL 
+const DATABASE_URL = process.env.NODE_ENV === 'test' ? 'sqlite:memory:' : process.env.DATABASE_URL;
+// const DATABASE_URL = process.env.DATABASE_URL 
 
 let sequelizeOptions = {
   dialectOptions: {
