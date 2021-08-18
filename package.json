@@ -1,15 +1,14 @@
 {
   "name": "auth-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Author: Dunia Alkilany",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "watch": "nodemon index.js",
+    "init:config": "sequelize init:config",
+    "db:create": "sequelize db:create",
     "lint": "eslint **/*.js",
-    "test": "jest --coverage",
-    "test-watch": "jest --watchAll --coverage",
-    "NODE_ENV": "test"
+    "test": "NODE_ENV=test jest  --verbose --coverage"
   },
   "repository": {
     "type": "git",
@@ -36,6 +35,6 @@
     "sequelize-cli": "^6.2.0",
     "sqlite3": "^5.0.2",
     "supertest": "^6.1.5"
-  }
+  },
+  "devDependencies": {}
 }
-
