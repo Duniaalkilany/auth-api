@@ -9,13 +9,12 @@ https://dunia-auth-api.herokuapp.com/
 
 
 
-
 * ### Github Actions:
 
 https://github.com/Duniaalkilany/auth-api/actions
 
 * ### pull request :
-https://github.com/Duniaalkilany/auth-api/pull/1
+https://github.com/Duniaalkilany/auth-api/pull/7
 
 
 
