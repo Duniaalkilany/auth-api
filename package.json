@@ -1,4 +1,7 @@
+
 {
+
+
   "name": "auth-api",
   "version": "1.0.0",
   "description": "## Author: Dunia Alkilany",
@@ -8,6 +11,9 @@
     "test-watch": "jest --watchAll",
     "test": "jest --verbose --coverage",
     "NODE_ENV": "test"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "repository": {
     "type": "git",
