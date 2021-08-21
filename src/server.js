@@ -18,10 +18,7 @@ const v2Routes = require('./routes/v2.js');
 //prepare express app
 const app = express();
 
-app.get('/', lifeProof);
-function lifeProof(req, res) {
-  res.status(200).json('HELLO from auth-api 😎!');
-}
+
 
 // app level middleware
 app.use(cors());
@@ -29,6 +26,10 @@ app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.get('/', lifeProof);
+function lifeProof(req, res) {
+  res.status(200).json('HELLO from auth-api 😎!');
+}
 
 
 
